@@ -1,0 +1,63 @@
+:root {
+  --white-color: #F5F5F5;
+  --black-color: #000000;
+  --first-card: #FFF3E3;
+   /* we are also using this for the headings/second hero card paragraph  */
+  --first-card-first-color: #333333; 
+  /* we are also using this for the buttons */
+  --first-card-second-color: #B88E2F;
+  --paragraph-after-heading: #666666;
+  /* third hero title card */
+  --third-card-color: #3A3A3A;
+  --third-card-gray-color: #898989;
+  --third-card-light-gray: #B0B0B0;
+  --third-card-background: #F4F5F7;
+  --third-card-new-etiquette: #2EC1AC;
+  --third-card-discount: #E97171;
+  /* fourth hero */
+  --fourth-background: #FCF8F3;
+  --fourth-paragraph: #616161;
+  --fourth-note-background: #FFFFFF;
+  /* font families */
+  --main-font: 'Poppins', sans-serif;
+  --secondary-font: 'Montserrat', sans-serif;
+}
+*,**::before,*::after{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+/* Header */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0 54px; */
+  height: 100px;
+}
+.nav-ul, .menu-ul{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.nav-logo{
+  display: flex;
+  justify-content: center;
+  flex: 0.5;
+}
+.nav-ul{
+  justify-content: space-around;
+  flex: 1.5;
+}
+.nav-ul > li > a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: bold;
+  font-family: var(--main-font)
+}
+.menu-ul{
+  justify-content: space-around;
+  flex: 0.5;
+}
+/* Main */
