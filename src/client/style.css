@@ -61,3 +61,59 @@ nav{
   flex: 0.5;
 }
 /* Main */
+.first-hero{
+  height: 716px;
+}
+.first-background{
+  height: 100%;
+  background-image: url('/assets/homepage/images/first-section/scandinavian-interior-mockup-wall-decal-background 1.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.first-card > p,
+.first-card > h1{
+  margin: 0;
+}
+.first-card{
+  padding: 49.5px;
+  width: 443px;
+  background-color: var(--first-card);
+  margin-right: 58px;
+  font-family: var(--main-font);
+}
+.first-card > .first-p{
+  color: var(--first-card-first-color);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.first-card > h1{
+  margin-top: 4px;
+  color: var(--first-card-second-color);
+  font-size: 52px;
+  line-height: 65px;
+}
+.first-card > .second-p{
+  margin-top: 17px;
+  color: var(--first-card-first-color);
+  font-size: 18px;
+  line-height: 24px; 
+}
+.first-card > button{
+  margin-top: 46px;
+  width: 222px;
+  height: 74px;
+  background-color: var(--first-card-second-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.first-card > button:hover{
+  background-color: #ffffff;;
+  color: var(--third-card-color);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.329);
+}
