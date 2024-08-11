@@ -11,10 +11,10 @@
     <header>
       <nav>
         <div class="nav-logo">
-          <a href="#"><img src="/assets/homepage/icons/top/Frame 168.png" alt="company logo"></a>
+          <a href="#" class="goToHome"><img src="/assets/homepage/icons/top/Frame 168.png" alt="company logo"></a>
         </div>
         <ul class="nav-ul">
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="goToHome">Home</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
@@ -31,7 +31,7 @@
 
 
       <!-- homepage -->
-      <!--
+
       <div class="first-hero">
         <div class="first-background">
           <div class="first-card">
@@ -115,7 +115,7 @@
               <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
             </div>
           </div>
-          <button class="show-more-btn">Show More</button>
+          <button class="show-more-btn" id="show-shop">Show More</button>
         </div>
       </div>
       <div class="fourth-hero">
@@ -171,8 +171,6 @@
           </div>
         </div>
       </div>
-    
-      -->
       
       <!-- Shop -->
       <!--
@@ -346,7 +344,7 @@
       -->
       
       <!-- Single Product -->
-       <!-- 
+      <!-- 
       <div class="navigation-single-product">
         <div class="location">
           <p><a href="#">Home</a></p>
@@ -442,6 +440,196 @@
 
        -->
 
+      <!-- Cart -->
+      <!--  
+      <div class="first-cart">
+        <div class="first-cart-background">
+          <h1>Cart</h1>
+          <div class="location">
+            <p><a href="#">Home</a></p>
+            <img src="/assets/shop/icons/top/dashicons_arrow-down-alt2.png" alt="">
+            <p><a href="#">Cart</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-cart">
+        <div class="second-cart-background">
+          <div class="second-cart-left">
+            <div class="top">
+              <p>Product</p>
+              <p>Price</p>
+              <p>Quantity</p>
+              <p>Subtotal</p>
+            </div>
+            <div class="mid">
+              <img src="/assets/cart/images/mid/Group 146.png" alt="">
+              <p>Asgaard sofa</p>
+              <p>Rs. 250,000.00</p>
+              <input type="number" value="1">
+              <p>Rs. 250,000.00</p>
+              <button><img src="/assets/cart/icon/mid/ant-design_delete-filled.png" alt=""></button>
+            </div>
+          </div>
+          <div class="second-cart-right">
+            <div class="right-box">
+              <h2>Cart Totals</h2>
+              <div class="second-cart-right-div">
+                <p>Subtotal <span class="sub-span">RS. 250,000.00</span></p>
+                <p>Total <span class="tot-span">RS. 250,000.00</span></p>
+              </div>
+              <a href="#">Check Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-cart">
+        <div class="third-cart-banners">
+          <div class="banner1">
+            <img src="/assets/shop/icons/mid/trophy 1.png" alt="">
+            <div class="banner-text">
+              <h3>Hight Quality</h3>
+              <h4>crafted from top materials</h4>
+            </div>
+          </div>
+          <div class="banner2">
+            <img src="/assets/shop/icons/mid/guarantee.png" alt="">
+            <div class="banner-text">
+              <h3>Warranty Protection</h3>
+              <h4>Over 2 years</h4>
+            </div>
+          </div>
+          <div class="banner1">
+            <img src="/assets/shop/icons/mid/shipping.png" alt="">
+            <div class="banner-text">
+              <h3>Free Shipping</h3>
+              <h4>Order over 150$</h4>
+            </div>
+          </div>
+          <div class="banner1">
+            <img src="/assets/shop/icons/mid/customer-support.png" alt="">
+            <div class="banner-text">
+              <h3>24/7 Support</h3>
+              <h4>Dedicated support</h4>
+            </div>
+          </div>
+      </div>
+      </div>
+
+       -->
+    
+      <!-- Checkout -->
+      <!-- 
+      <div class="first-checkout">
+        <div class="first-checkout-background">
+          <h1>Checkout</h1>
+          <div class="location">
+            <p><a href="#">Home</a></p>
+            <img src="/assets/shop/icons/top/dashicons_arrow-down-alt2.png" alt="">
+            <p><a href="#">Checkout</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-checkout">
+        <div class="second-checkout-background">
+          <div class="second-checkout-left">
+            <form>
+              <h2>Billing details</h2>
+              <div class="name">
+                <div class="firstname">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="firstname" id="firstname">
+                </div>
+                <div class="lastname">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" name="lastname" id="lastname">
+                </div>
+              </div>
+              <label for="companyname">Company Name (Optional)</label>
+              <input type="text" name="companyname" id="companyname">
+              <label for="country">Country / Region</label>
+              <input type="text" name="country" id="country">
+              <label for="address">Street address</label>
+              <input type="text" name="address" id="address">
+              <label for="town">Town / City</label>
+              <input type="text" name="town" id="town">
+              <label for="zip-code">Zip code</label>
+              <input type="text" name="zip-code" id="zip-code">
+              <label for="phone">Phone</label>
+              <input type="text" name="phone" id="phone">
+              <label for="email">Email address</label>
+              <input type="text" name="email" id="email">
+              <input type="text" name="additional" id="additional" placeholder="Additional Information">
+            </form>
+          </div>
+          <div class="second-checkout-right">
+            <div class="top">
+              <div class="flex title-checkout">
+                <p>Product</p>
+                <p>Subtotal</p>
+              </div>
+              <div class="flex">
+                <p>Asgaard sofa x 1</p>
+                <p>Rs. 250,000.00</p>
+              </div>
+              <div class="flex">
+                <p>Subtotal</p>
+                <p>Rs. 250,000.00</p>
+              </div>
+              <div class="flex">
+                <p>Total</p>
+                <p class="total-checkout">Rs. 250,000.00</p>
+              </div>
+            </div>
+            <div class="mid">
+              <input type="radio">
+              <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+              <input type="radio">
+              <input type="radio">
+              <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
+              <button>Place order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-checkout">
+        <div class="third-checkout-banners">
+          <div class="banner1">
+            <img src="/assets/shop/icons/mid/trophy 1.png" alt="">
+            <div class="banner-text">
+              <h3>Hight Quality</h3>
+              <h4>crafted from top materials</h4>
+            </div>
+          </div>
+          <div class="banner2">
+            <img src="/assets/shop/icons/mid/guarantee.png" alt="">
+            <div class="banner-text">
+              <h3>Warranty Protection</h3>
+              <h4>Over 2 years</h4>
+            </div>
+          </div>
+          <div class="banner1">
+            <img src="/assets/shop/icons/mid/shipping.png" alt="">
+            <div class="banner-text">
+              <h3>Free Shipping</h3>
+              <h4>Order over 150$</h4>
+            </div>
+          </div>
+          <div class="banner1">
+            <img src="/assets/shop/icons/mid/customer-support.png" alt="">
+            <div class="banner-text">
+              <h3>24/7 Support</h3>
+              <h4>Dedicated support</h4>
+            </div>
+          </div>
+      </div>
+      </div>
+       -->
+
+
 
     </main>
 
@@ -454,7 +642,7 @@
         </div>
         <div class="footer-second">
           <ul aria-label="Links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="goToHome">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
