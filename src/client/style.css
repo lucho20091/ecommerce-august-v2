@@ -589,6 +589,20 @@ select::-ms-expand {
   font-weight: bold;
   cursor: pointer;
 }
+.addToCart{
+  width: 222px;
+  height: 74px;
+  background-color: var(--first-card-second-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.addToCart:hover{
+  box-shadow: 0 0 12px black;
+}
 .first-single-3 > .quantity > p{
   font-size: 20px;
   font-weight: bold;
@@ -930,6 +944,7 @@ select::-ms-expand {
   font-size: 20px;
   border: 1px solid var(--black-color);
   border-radius: 15px;
+  cursor: pointer;
 }
 /* Third checkout */
 .third-checkout{
