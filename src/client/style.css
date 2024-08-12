@@ -191,6 +191,12 @@ nav{
 .third-card{
   background-color: var(--third-card-background);
   position: relative;
+  cursor: pointer;
+}
+.third-card > img{
+  width: 282px;
+  height: 300px;
+  object-fit: cover;
 }
 .third-background > .show-more-btn{
   display: block;
@@ -452,6 +458,12 @@ select::-ms-expand {
 .second-shop-card{
   background-color: var(--third-card-background);
   position: relative;
+  cursor: pointer;
+}
+.second-shop-card > img{
+  width: 282px;
+  height: 300px;
+  object-fit: cover;
 }
 /* Third Shop */
 .third-shop{

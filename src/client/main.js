@@ -1,7 +1,11 @@
+import { data } from './data'
+
 document.body.addEventListener('click', (e)=>{
     console.log(e.target)
-
 })
+
+console.log(data)
+
 // DOM Elements
 const mainEl = document.querySelector('main')
 const showShopEl = document.getElementById('show-shop')
@@ -244,54 +248,7 @@ function renderHome(){
         <div class="third-background">
           <h2>Our Products</h2>
           <div class="third-cards">
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="third-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
+           ${homeDataRender()}
           </div>
           <button class="show-more-btn" id="show-shop">Show More</button>
         </div>
@@ -672,4 +629,20 @@ function renderCheckout(){
     el.addEventListener('click', renderSingleProduct)
   })
 }
+
+function homeDataRender(){
+  let html = ''
+  for (let i = 0; i < 8; i++){
+    html += `
+    <div class="third-card">
+      <img src="/assets/products/${data[i].img}" alt="">
+      <h3 class="title-item">${data[i].name}</h3>
+      <p class="mini-description">${data[i].miniDescription.slice(0, 30)}...</p>
+      <p class="price">$${data[i].price}<span class="price-before">Rp 3.500.000</span></p>
+    </div>`
+  }
+  return html
+}
+
+renderHome()
 // Functionality
