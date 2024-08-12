@@ -638,7 +638,7 @@ function homeDataRender(){
       <img src="/assets/products/${data[i].img}" alt="">
       <h3 class="title-item">${data[i].name}</h3>
       <p class="mini-description">${data[i].miniDescription.slice(0, 30)}...</p>
-      <p class="price">$${data[i].price}<span class="price-before">Rp 3.500.000</span></p>
+      <p class="price">$${data[i].price}<span class="price-before"></span></p>
     </div>`
   }
   return html

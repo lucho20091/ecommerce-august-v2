@@ -59,7 +59,7 @@ export const data = [
         miniDescription: "A minimalist glass coffee table with sleek chrome legs.",
         fullDescription: "This glass coffee table combines modern elegance with functionality. The tempered glass top is easy to clean, while the chrome legs add a touch of sophistication to any living room.",
         type: "table",
-        img: "1-sofa/1sofa1.jpg",
+        img: "7-table/7table1.jpg",
         price: 199.99
     },
     {
@@ -68,7 +68,7 @@ export const data = [
         miniDescription: "An industrial-style floor lamp with a matte black finish.",
         fullDescription: "Add an industrial edge to your space with this floor lamp. The matte black finish and exposed bulb design give it a raw, modern look, perfect for lofts or contemporary interiors.",
         type: "lamp",
-        img: "1-chair/1chair1.jpg",
+        img: "8-lamp/8lamp1.jpg",
         price: 89.99
     },
     {
