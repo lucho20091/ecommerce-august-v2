@@ -67,102 +67,7 @@ function renderShop(){
       <div class="second-shop">
         <div class="second-shop-background">
           <div class="second-shop-cards">
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
-            <div class="second-shop-card">
-              <img src="/assets/homepage/images/second-section/image 2.png" alt="">
-              <h3 class="title-item">Syltherine</h3>
-              <p class="mini-description">Stylish cafe chair</p>
-              <p class="price">Rp 2.500.000 <span class="price-before">Rp 3.500.000</span></p>
-            </div>
+            ${shopDataRender()}
           </div>
         </div>
       </div>
@@ -634,7 +539,7 @@ function homeDataRender(){
   let html = ''
   for (let i = 0; i < 8; i++){
     html += `
-    <div class="third-card">
+    <div class="third-card" id="${data[i].id}">
       <img src="/assets/products/${data[i].img}" alt="">
       <h3 class="title-item">${data[i].name}</h3>
       <p class="mini-description">${data[i].miniDescription.slice(0, 30)}...</p>
@@ -644,5 +549,17 @@ function homeDataRender(){
   return html
 }
 
+function shopDataRender(){
+  let html = ''
+  for (let i = 0; i < 16; i++){
+    html += `<div class="second-shop-card">
+              <img src="/assets/products/${data[i].img}" alt="">
+              <h3 class="title-item">${data[i].name}</h3>
+              <p class="mini-description">${data[i].miniDescription.slice(0,27)}...</p>
+              <p class="price">$${data[i].price}<span class="price-before"></span></p>
+            </div>`
+  }
+  return html
+}
 renderHome()
 // Functionality

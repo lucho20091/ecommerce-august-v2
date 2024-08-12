@@ -192,11 +192,32 @@ nav{
   background-color: var(--third-card-background);
   position: relative;
   cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.192);
+  font-family: var(--main-font);
 }
 .third-card > img{
   width: 282px;
   height: 300px;
   object-fit: cover;
+}
+.third-card > h3{
+  font-size: 24px;
+  line-height: 1.2;
+  color: #3A3A3A;
+  margin: 0;
+  padding: 30px 0 0 10px;
+}
+.third-card > .mini-description{
+  line-height: 1.5;
+  color: #898989;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+.third-card > .price{
+  margin: 0;
+  padding: 10px 0 30px 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .third-background > .show-more-btn{
   display: block;
@@ -459,11 +480,32 @@ select::-ms-expand {
   background-color: var(--third-card-background);
   position: relative;
   cursor: pointer;
+  font-family: var(--main-font);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.192);
 }
 .second-shop-card > img{
   width: 282px;
   height: 300px;
   object-fit: cover;
+}
+.second-shop-card > h3{
+  font-size: 24px;
+  line-height: 1.2;
+  color: #3A3A3A;
+  margin: 0;
+  padding: 30px 0 0 10px;
+}
+.second-shop-card > .mini-description{
+  line-height: 1.5;
+  color: #898989;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+.second-shop-card > .price{
+  margin: 0;
+  padding: 10px 0 30px 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 /* Third Shop */
 .third-shop{
