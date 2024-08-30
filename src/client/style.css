@@ -599,10 +599,19 @@ select::-ms-expand {
   flex-direction: column;
   gap: 32px;
 }
+.first-single-1 > img{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
 .first-single-2{
   margin-left: 31px;
   width: 481px;
   flex: 1;
+}
+.first-single-2-background > img{
+  width: 481px;
+  height: 391px;
 }
 .first-single-2-background{
   background-color: #FAF3EA;

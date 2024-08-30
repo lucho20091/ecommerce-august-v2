@@ -1,10 +1,5 @@
 import { data } from './data'
 
-document.body.addEventListener('click', (e)=>{
-    console.log(e.target)
-})
-
-console.log(data)
 
 // DOM Elements
 const mainEl = document.querySelector('main')
@@ -114,7 +109,10 @@ function renderShop(){
       el.addEventListener('click', renderHome)
     })
     document.querySelectorAll('.second-shop-card').forEach(el => {
-      el.addEventListener('click', renderSingleProduct)
+      el.addEventListener('click', (e) => {
+        const productId = Number(e.target.parentElement.dataset.id)
+        renderSingleProduct(productId)
+      })
     })
 }
 function renderHome(){
@@ -214,13 +212,19 @@ function renderHome(){
       window.scrollTo(0,0)
       document.getElementById('show-shop').addEventListener('click', renderShop)
       document.querySelectorAll('.third-card').forEach(el => {
-        el.addEventListener('click', renderSingleProduct)
+        el.addEventListener('click', (e) => {
+          const productId = Number(e.target.parentElement.dataset.id)
+          renderSingleProduct(productId)
+        })
     })
       document.querySelectorAll('.goToShop').forEach(el => {
         el.addEventListener('click', renderShop)
       })
     }
-function renderSingleProduct(){
+function renderSingleProduct(id){
+  const product = data.find(item => item.id === id) 
+  const { name, miniDescription, fullDescription, type, img, price } = product
+  const defaultImg = `/assets/products/${img}1.jpg`
   mainEl.innerHTML = `
   <div class="navigation-single-product">
         <div class="location">
@@ -228,27 +232,27 @@ function renderSingleProduct(){
           <img src="/assets/shop/icons/top/dashicons_arrow-down-alt2.png" alt="">
           <p><a href="#" class="goToShop">Shop</a></p>
           <img src="/assets/shop/icons/top/dashicons_arrow-down-alt2.png" alt="">
-          <p><a href="#">Product</a></p>
+          <p><a href="#">${name}</a></p>
         </div>
       </div>
       <div class="first-single-product">
         <div class="first-single-1">
-          <img src="/assets/singleProduct/images/top/Group 94.png" alt="">
-          <img src="/assets/singleProduct/images/top/Group 96.png" alt="">
-          <img src="/assets/singleProduct/images/top/Group 97.png" alt="">
-          <img src="/assets/singleProduct/images/top/Group 98.png" alt="">
+          <img src="/assets/products/${img}1.jpg" data-selected="true" data-img="${img}1.jpg" alt="" class="img-products-single">
+          <img src="/assets/products/${img}2.jpg" data-selected="false" data-img="${img}2.jpg" alt="" class="img-products-single">
+          <img src="/assets/products/${img}3.jpg" data-selected="false" data-img="${img}3.jpg" alt="" class="img-products-single">
+          <img src="/assets/products/${img}4.jpg" data-selected="false" data-img="${img}4.jpg" alt="" class="img-products-single">
         </div>
         <div class="first-single-2">
           <div class="first-single-2-background">
-            <img src="/assets/singleProduct/images/top/Asgaard sofa 3.png" alt="">
+            <img src="${defaultImg}" alt="" class="main-img-single-2">
           </div>
         </div>
         <div class="first-single-3">
-          <h1>Asgaard sofa</h1>
-          <h2>Rs. 250,000.00</h2>
+          <h1>${name}</h1>
+          <h2>$${price}</h2>
           <img src="/assets/singleProduct/images/top/Group 88.png" alt="">
           <span>5 customer Review</span>
-          <p class="small-description">Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+          <p class="small-description">${miniDescription}
           </p>
           <label for="size-product">Size</label>
           <input type="radio" name="size-product" value="l">
@@ -276,8 +280,7 @@ function renderSingleProduct(){
           <a href="#">Reviews [5]</a>
         </div>
         <div class="description-mid">
-          <p>Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
-          <p>Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+         <p>${fullDescription}</p>
         </div>
         <div class="images-mid">
           <img src="/assets/singleProduct/images/mid/Group 106.png" alt="">
@@ -318,6 +321,12 @@ function renderSingleProduct(){
   window.scrollTo(0,0)
   document.querySelectorAll('.goToHome').forEach(el => {
     el.addEventListener('click', renderHome)
+  })
+  document.querySelectorAll('.img-products-single').forEach(item => {
+    item.addEventListener('click', (e) => {
+      const imgUrl = e.target.dataset.img
+      document.querySelector('.main-img-single-2').src = `/assets/products/${imgUrl}`
+    })
   })
   document.querySelectorAll('.goToShop').forEach(el => {
     el.addEventListener('click', renderShop)
@@ -539,8 +548,8 @@ function homeDataRender(){
   let html = ''
   for (let i = 0; i < 8; i++){
     html += `
-    <div class="third-card" id="${data[i].id}">
-      <img src="/assets/products/${data[i].img}" alt="">
+    <div class="third-card" data-id="${data[i].id}">
+      <img src="/assets/products/${data[i].img}1.jpg" alt="">
       <h3 class="title-item">${data[i].name}</h3>
       <p class="mini-description">${data[i].miniDescription.slice(0, 30)}...</p>
       <p class="price">$${data[i].price}<span class="price-before"></span></p>
@@ -552,8 +561,8 @@ function homeDataRender(){
 function shopDataRender(){
   let html = ''
   for (let i = 0; i < 16; i++){
-    html += `<div class="second-shop-card">
-              <img src="/assets/products/${data[i].img}" alt="">
+    html += `<div class="second-shop-card" data-id=${data[i].id}>
+              <img src="/assets/products/${data[i].img}1.jpg" alt="">
               <h3 class="title-item">${data[i].name}</h3>
               <p class="mini-description">${data[i].miniDescription.slice(0,27)}...</p>
               <p class="price">$${data[i].price}<span class="price-before"></span></p>

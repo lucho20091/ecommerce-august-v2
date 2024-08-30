@@ -5,7 +5,7 @@ export const data = [
         miniDescription: "A stylish and comfortable three-seater sofa in a neutral gray color.",
         fullDescription: "This modern sofa features soft cushions, durable fabric, and a sleek design that complements any contemporary living room. The neutral gray color ensures it blends seamlessly with various decor styles.",
         type: "sofa",
-        img: "1-sofa/1sofa1.jpg",
+        img: "1-sofa/1sofa",
         price: 799.99
     },
     {
@@ -14,7 +14,7 @@ export const data = [
         miniDescription: "A cozy armchair with plush cushions and a timeless design.",
         fullDescription: "The classic armchair is perfect for adding a touch of elegance to your living space. It features high-quality fabric upholstery, comfortable padding, and sturdy wooden legs, making it both stylish and durable.",
         type: "chair",
-        img: "2-chair/2chair1.jpg",
+        img: "2-chair/2chair",
         price: 299.99
     },
     {
@@ -23,7 +23,7 @@ export const data = [
         miniDescription: "A rustic wooden dining table that seats six comfortably.",
         fullDescription: "Crafted from reclaimed wood, this rustic dining table offers a warm, inviting feel to your dining area. Its natural finish highlights the wood's unique grain patterns, making it a perfect centerpiece for family meals.",
         type: "table",
-        img: "3-table/3table1.jpg",
+        img: "3-table/3table",
         price: 549.99
     },
     {
@@ -32,7 +32,7 @@ export const data = [
         miniDescription: "A sleek, modern lamp with adjustable brightness settings.",
         fullDescription: "This contemporary lamp features a minimalist design with a polished metal base and an adjustable shade. The built-in dimmer switch allows you to set the perfect lighting mood for any occasion.",
         type: "lamp",
-        img: "4-lamp/4lamp1.jpg",
+        img: "4-lamp/4lamp",
         price: 129.99
     },
     {
@@ -41,7 +41,7 @@ export const data = [
         miniDescription: "A large sectional sofa with extra-deep seats for added comfort.",
         fullDescription: "Ideal for large living rooms, this sectional sofa provides ample seating space with its extra-deep seats and plush cushions. The modular design allows for flexible arrangements to suit your space.",
         type: "sofa",
-        img: "5-sofa/5sofa1.jpg",
+        img: "5-sofa/5sofa",
         price: 899.99
     },
     {
@@ -50,7 +50,7 @@ export const data = [
         miniDescription: "A luxurious leather recliner with adjustable back and footrest.",
         fullDescription: "Experience ultimate relaxation with this leather recliner, featuring top-grain leather upholstery and a smooth reclining mechanism. The adjustable back and footrest provide customized comfort for every user.",
         type: "chair",
-        img: "6-chair/6chair1.jpg",
+        img: "6-chair/6chair",
         price: 449.99
     },
     {
@@ -59,7 +59,7 @@ export const data = [
         miniDescription: "A minimalist glass coffee table with sleek chrome legs.",
         fullDescription: "This glass coffee table combines modern elegance with functionality. The tempered glass top is easy to clean, while the chrome legs add a touch of sophistication to any living room.",
         type: "table",
-        img: "7-table/7table1.jpg",
+        img: "7-table/7table",
         price: 199.99
     },
     {
@@ -68,7 +68,7 @@ export const data = [
         miniDescription: "An industrial-style floor lamp with a matte black finish.",
         fullDescription: "Add an industrial edge to your space with this floor lamp. The matte black finish and exposed bulb design give it a raw, modern look, perfect for lofts or contemporary interiors.",
         type: "lamp",
-        img: "8-lamp/8lamp1.jpg",
+        img: "8-lamp/8lamp",
         price: 89.99
     },
     {
@@ -77,7 +77,7 @@ export const data = [
         miniDescription: "A space-saving sofa that easily converts into a bed.",
         fullDescription: "This convertible sofa bed is perfect for small spaces or guest rooms. It effortlessly transforms from a stylish sofa into a comfortable bed, offering versatility and convenience.",
         type: "sofa",
-        img: "9-sofa/9sofa1.jpg",
+        img: "9-sofa/9sofa",
         price: 699.99
     },
     {
@@ -86,7 +86,7 @@ export const data = [
         miniDescription: "A classic wingback chair with a high back and tufted upholstery.",
         fullDescription: "The wingback chair is a timeless piece that adds sophistication to any room. It features tufted upholstery, a high back, and solid wood legs, making it both elegant and comfortable.",
         type: "chair",
-        img: "10-chair/10chair1.jpg",
+        img: "10-chair/10chair",
         price: 329.99
     },
     {
@@ -95,7 +95,7 @@ export const data = [
         miniDescription: "A sophisticated dining table with a marble top and wooden legs.",
         fullDescription: "Elevate your dining experience with this marble top dining table. The luxurious marble surface is supported by sturdy wooden legs, combining elegance with practicality for your dining area.",
         type: "table",
-        img: "11-table/11table1.jpg",
+        img: "11-table/11table",
         price: 799.99
     },
     {
@@ -104,7 +104,7 @@ export const data = [
         miniDescription: "A vintage-style table lamp with a brass finish and fabric shade.",
         fullDescription: "This vintage table lamp brings a touch of old-world charm to your home. The brass finish and fabric shade create a warm, inviting glow, perfect for bedside tables or reading nooks.",
         type: "lamp",
-        img: "12-lamp/12lamp1.jpg",
+        img: "12-lamp/12lamp",
         price: 59.99
     },
     {
@@ -113,7 +113,7 @@ export const data = [
         miniDescription: "A large L-shaped sofa with soft cushions and a sturdy frame.",
         fullDescription: "The L-shaped sofa offers ample seating and a cozy corner for lounging. Its soft cushions and robust frame ensure lasting comfort and durability, making it a great addition to any living room.",
         type: "sofa",
-        img: "13-sofa/13sofa1.jpg",
+        img: "13-sofa/13sofa",
         price: 1099.99
     },
     {
@@ -122,7 +122,7 @@ export const data = [
         miniDescription: "A vibrant accent chair with a modern geometric pattern.",
         fullDescription: "Brighten up your space with this accent chair, featuring a bold geometric pattern and vibrant colors. The chair's contemporary design and comfortable seating make it a stylish and practical choice.",
         type: "chair",
-        img: "14-chair/14chair1.jpg",
+        img: "14-chair/14chair",
         price: 249.99
     },
     {
@@ -131,7 +131,7 @@ export const data = [
         miniDescription: "An expandable dining table with a sleek, contemporary design.",
         fullDescription: "Perfect for hosting dinner parties, this expandable dining table can easily accommodate additional guests. Its sleek, contemporary design fits seamlessly into modern dining spaces.",
         type: "table",
-        img: "15-table/15table1.jpg",
+        img: "15-table/15table",
         price: 649.99
     },
     {
@@ -140,7 +140,7 @@ export const data = [
         miniDescription: "A versatile desk lamp with an adjustable arm and LED light.",
         fullDescription: "The adjustable desk lamp offers optimal lighting for work or study. Its adjustable arm and energy-efficient LED light make it a functional and eco-friendly choice for your workspace.",
         type: "lamp",
-        img: "16-lamp/16lamp1.jpg",
+        img: "16-lamp/16lamp",
         price: 49.99
     },
     {
@@ -149,7 +149,7 @@ export const data = [
         miniDescription: "A comfortable sofa with reclining seats for ultimate relaxation.",
         fullDescription: "Unwind in style with this reclining sofa, featuring plush seating and smooth reclining mechanisms. Each seat reclines individually, allowing you to find your perfect position for relaxation.",
         type: "sofa",
-        img: "17-sofa/17sofa1.jpg",
+        img: "17-sofa/17sofa",
         price: 1299.99
     },
     {
@@ -158,7 +158,7 @@ export const data = [
         miniDescription: "A modern swivel chair with ergonomic design and padded seat.",
         fullDescription: "This modern swivel chair is designed for comfort and flexibility. Its ergonomic design supports your posture, while the padded seat and 360-degree swivel make it a versatile addition to any room.",
         type: "chair",
-        img: "18-chair/18chair1.jpg",
+        img: "18-chair/18chair",
         price: 199.99
     },
     {
@@ -167,7 +167,7 @@ export const data = [
         miniDescription: "A round dining table with a solid wood top and pedestal base.",
         fullDescription: "Gather around this round dining table, which features a solid wood top and a sturdy pedestal base. Its classic design and durable construction make it a timeless choice for any dining area.",
         type: "table",
-        img: "19-table/19table1.jpg",
+        img: "19-table/19table",
         price: 399.99
     },
     {
@@ -176,7 +176,7 @@ export const data = [
         miniDescription: "A contemporary floor lamp with a slim profile and soft light.",
         fullDescription: "This modern floor lamp offers a slim, space-saving design with a soft, diffused light. Its sleek profile makes it an ideal choice for adding ambient lighting to any room without taking up too much space.",
         type: "lamp",
-        img: "20-lamp/20lamp1.jpg",
+        img: "20-lamp/20lamp",
         price: 79.99
     }
 ];
