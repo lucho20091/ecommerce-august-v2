@@ -782,19 +782,32 @@ select::-ms-expand {
 .second-cart-left{
   flex: 1;
 }
-.second-cart-left > .top{
-  background-color: #FAF3EA;
-  display: flex;
-  margin-bottom: 55px;
+.second-cart-left > table > thead > .top{
   width: 817px;
-  justify-content: space-around;
+  background-color: #FAF3EA;
 }
-.second-cart-left > .mid{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+table {
+  border-collapse: collapse;
+  width: 817px;
+  /* letter-spacing: 1px; */
+  text-align: center;
 }
-.second-cart-left > .mid > button{
+th,
+td {
+  padding: 8px 10px;
+}
+.mid > td > input {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 40px;
+  font-size: 20px;
+}
+.mid > td > img{
+  width: 105px;
+  height: 105px;
+}
+.second-cart-left > table > tbody > .mid > td > button{
   background-color: transparent;
   border: none;
   cursor: pointer;

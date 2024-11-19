@@ -12,7 +12,7 @@ const cartEl = document.getElementById('cartEl')
 // state
 let home = true
 let shop = false
-let cart = false 
+let cart = JSON.parse(localStorage.getItem('cart')) || [] 
 let checkout = false
 
 
@@ -263,14 +263,14 @@ function renderSingleProduct(id){
           <input type="radio" name="color-product" value="black">
           <input type="radio" name="color-product" value="yellow">
           <div class="quantity">
-            <button>-</button>
-            <p>1</p>
-            <button>+</button>
+            <button class="remove-quantity">-</button>
+            <p class="number-quantity">1</p>
+            <button class="add-quantity">+</button>
           </div>
           <p>SKU : SS001</p>
           <p>Category : Sofas</p>
           <p>Tags : </p>
-          <button id="add-to-cart" class="addToCart">Add To Cart</button>
+          <button id="add-to-cart" class="addToCart" data-id="${id}">Add To Cart</button>
         </div>
       </div>
       <div class="second-single-product">
@@ -334,6 +334,30 @@ function renderSingleProduct(id){
   document.querySelectorAll('.third-single-product-card').forEach(el => {
     el.addEventListener('click', renderSingleProduct)
   })
+  document.querySelector('.addToCart').addEventListener('click', (e) => {
+    const cartItem = cart.find(item => item.id === Number(e.target.dataset.id))
+    if (cartItem){
+      cartItem.quantity += 1
+    } else {
+      const numberQuantity = Number(document.querySelector('.number-quantity').textContent)
+      cart.push({...product, quantity: numberQuantity})
+      localStorage.setItem('cart', JSON.stringify(cart))
+    }
+    console.log(cart)
+  })
+
+  let quantityNumber = 1
+  document.querySelector('.remove-quantity').addEventListener('click', (e) => {
+      if (quantityNumber > 1){
+        quantityNumber -= 1
+      }
+      document.querySelector('.number-quantity').textContent = quantityNumber 
+    })
+
+  document.querySelector('.add-quantity').addEventListener('click', (e) => {
+    quantityNumber += 1
+    document.querySelector('.number-quantity').textContent = quantityNumber 
+  })
 }
 function renderCart(){
   mainEl.innerHTML = `
@@ -351,21 +375,24 @@ function renderCart(){
       <div class="second-cart">
         <div class="second-cart-background">
           <div class="second-cart-left">
-            <div class="top">
-              <p>Product</p>
-              <p>Price</p>
-              <p>Quantity</p>
-              <p>Subtotal</p>
+            <table>
+                <thead>
+
+                  <tr class="top">
+                    <th scope="row" colspan="2">Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                  </tr>
+
+                </thead>
+                <tbody>
+                  ${cartDataRender()}
+                </tbody>
+            </table>
             </div>
-            <div class="mid">
-              <img src="/assets/cart/images/mid/Group 146.png" alt="">
-              <p>Asgaard sofa</p>
-              <p>Rs. 250,000.00</p>
-              <input type="number" value="1">
-              <p>Rs. 250,000.00</p>
-              <button><img src="/assets/cart/icon/mid/ant-design_delete-filled.png" alt=""></button>
-            </div>
-          </div>
+
           <div class="second-cart-right">
             <div class="right-box">
               <h2>Cart Totals</h2>
@@ -567,6 +594,27 @@ function shopDataRender(){
               <p class="mini-description">${data[i].miniDescription.slice(0,27)}...</p>
               <p class="price">$${data[i].price}<span class="price-before"></span></p>
             </div>`
+  }
+  return html
+}
+
+function cartDataRender(){
+  let html = ''
+  for (let i = 0; i < cart.length; i++){
+    console.log('loop')
+    console.log(cart.length)
+    console.log(cart)
+    html += `
+            <tr class="mid">
+              <td><img src="/assets/products/${cart[i].img}1.jpg" alt=""></td>
+              <td><p>${cart[i].name}</p></td>
+              <td><p>${cart[i].price}</p></td>
+              <td><input type="number" value="${cart[i].quantity}"></td>
+              <td><p>${cart[i].price * cart[i].quantity}</p></td>
+              <td><button><img src="/assets/cart/icon/mid/ant-design_delete-filled.png" alt=""></button></td>
+            </tr>
+    `
+
   }
   return html
 }
